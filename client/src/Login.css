@@ -1,0 +1,33 @@
+.tituloCha{
+    font-style: italic;
+    font-family: "cursiva", cursive,;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.subtitle{
+    font-family: Arial black;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card{
+    margin-top: 80px;
+    margin-left: 400px;
+    width: 500px;
+}
+.card-header{
+    font-family: Arial black;
+}
+
+.user{
+    font-family: Arial black;
+    font-size: 10px;
+    margin-left: -67px;
+}
+.pass{
+    font-family: Arial black;
+    font-size: 10px;
+    margin-left: -45px;
+}
