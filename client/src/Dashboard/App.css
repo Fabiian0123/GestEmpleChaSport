@@ -25,3 +25,18 @@
   margin-top: 5px;
   
 }
+.blanck{
+  color: white !important;
+  font-style: italic;
+  font-family: "cursiva", cursive,;
+}
+.iniblanck{
+  color: white !important;
+}
+.navSi{
+  border-radius: 8px;
+}
+.quienblanck{
+  color: white !important;
+
+}
