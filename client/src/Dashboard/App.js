@@ -11,6 +11,7 @@ import { Modal } from 'react-bootstrap';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [empleadosCount, setEmpleadosCount] = useState(0);
   const navigate = useNavigate();
   const logout = () => {
     navigate('/login');
@@ -182,6 +183,7 @@ function App() {
     Axios.get("http://localhost:3001/empleados")
       .then((response) => {
         setEmpleados(response.data);
+        setEmpleadosCount(response.data.length);
       })
       .catch((error) => {
         console.error(error);
@@ -206,6 +208,7 @@ function App() {
             <Nav.Link className="quienblanck" href="#home">Quines Somos</Nav.Link>
           </Nav>
           <Button variant="primary" className="m-2" onClick={() => setShowModal(true)}>Agregar</Button>
+          <span className="ml-2 text-light">({empleadosCount} empleados/100)</span>
           <Modal show={showModal} onHide={() => setShowModal(false)}>
             <div className="card text-center">
               <div className="card-header">
